@@ -8,9 +8,14 @@
 
 
 categories = ["Clinic", "Restaurant", "Bank", "Butchery", "Supermarket" ]
+services = [ {category: Clinic, %w[ sales service foodstuf ], {category_id:  ]
 
 categories.each do |cat| 
     Category.create(title: cat)
-   
+
 end
 
+services.each do |ser| 
+    Category.create(title: ser)
+
+end
